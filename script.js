@@ -1,16 +1,3 @@
-// --- Security Check Start ---
-(function() {
-    const authorizedDomain = "talha-bhai-pay.vercel.app";
-    const currentHost = window.location.hostname;
-
-    // Agar domain match nahi karta toh /error par bhej do
-    if (currentHost !== authorizedDomain) {
-        window.location.href = window.location.origin + "/error";
-    }
-})();
-// --- Security Check End ---
-
-// --- Main Application Script (Direct Execution) ---
 (function() {
     // --- Time Logic ---
     const updateTime = () => {
@@ -55,5 +42,5 @@
         batteryInput.onchange = updateBattery;
     }
 
-    console.log("App loaded successfully without external locks.");
+    console.log("Script fully initialized without restrictions.");
 })();
